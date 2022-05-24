@@ -66,5 +66,16 @@ namespace PrzetwarznieObrazow
             L3Form l3 = new L3Form();
             l3.Show();
         }
+
+        private void labFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lab4Button_Click(object sender, EventArgs e)
+        {
+            L4Form l4 = new L4Form();
+            l4.Show();
+        }
     }
 }

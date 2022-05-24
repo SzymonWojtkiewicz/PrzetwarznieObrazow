@@ -76,6 +76,18 @@
     <Compile Include="L3Form.Designer.cs">
       <DependentUpon>L3Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="L4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L4Form.Designer.cs">
+      <DependentUpon>L4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L5Form.Designer.cs">
+      <DependentUpon>L5Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -89,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="L3Form.resx">
       <DependentUpon>L3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L4Form.resx">
+      <DependentUpon>L4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L5Form.resx">
+      <DependentUpon>L5Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

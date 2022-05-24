@@ -1,6 +1,6 @@
 ﻿namespace PrzetwarznieObrazow
 {
-    partial class L3Form
+    partial class L5Form
     {
         /// <summary>
         /// Required designer variable.
@@ -69,7 +69,7 @@
             this.labFlowLayoutPanel.Location = new System.Drawing.Point(12, 12);
             this.labFlowLayoutPanel.Name = "labFlowLayoutPanel";
             this.labFlowLayoutPanel.Size = new System.Drawing.Size(197, 492);
-            this.labFlowLayoutPanel.TabIndex = 4;
+            this.labFlowLayoutPanel.TabIndex = 5;
             // 
             // panel1
             // 
@@ -141,7 +141,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(194, 242);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label10
             // 
@@ -150,7 +149,6 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 13);
             this.label10.TabIndex = 12;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -169,7 +167,6 @@
             this.label8.Size = new System.Drawing.Size(39, 13);
             this.label8.TabIndex = 10;
             this.label8.Text = "bottom";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button1
             // 
@@ -179,7 +176,6 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Applay";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
@@ -188,7 +184,6 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 8;
             this.textBox3.Text = "150";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -232,7 +227,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "100";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // labDisplayPanel
             // 
@@ -241,10 +235,10 @@
             this.labDisplayPanel.Controls.Add(this.pictureBox2);
             this.labDisplayPanel.Controls.Add(this.pictureBox1);
             this.labDisplayPanel.Controls.Add(this.pictureBox0);
-            this.labDisplayPanel.Location = new System.Drawing.Point(227, 12);
+            this.labDisplayPanel.Location = new System.Drawing.Point(236, 12);
             this.labDisplayPanel.Name = "labDisplayPanel";
             this.labDisplayPanel.Size = new System.Drawing.Size(1452, 864);
-            this.labDisplayPanel.TabIndex = 5;
+            this.labDisplayPanel.TabIndex = 6;
             // 
             // pictureBox4
             // 
@@ -286,16 +280,15 @@
             this.pictureBox0.TabIndex = 0;
             this.pictureBox0.TabStop = false;
             // 
-            // L3Form
+            // L5Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1691, 906);
+            this.ClientSize = new System.Drawing.Size(1700, 900);
             this.Controls.Add(this.labDisplayPanel);
             this.Controls.Add(this.labFlowLayoutPanel);
-            this.Name = "L3Form";
-            this.Text = "L3Form";
-            this.Load += new System.EventHandler(this.L3Form_Load);
+            this.Name = "L5Form";
+            this.Text = "L5Form";
             this.labFlowLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -314,18 +307,14 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel labFlowLayoutPanel;
-        private System.Windows.Forms.Panel labDisplayPanel;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox0;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox3;
@@ -334,7 +323,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel labDisplayPanel;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox0;
     }
 }

@@ -252,6 +252,7 @@
             this.lab4Button.TabIndex = 3;
             this.lab4Button.Text = "Lab4";
             this.lab4Button.UseVisualStyleBackColor = true;
+            this.lab4Button.Click += new System.EventHandler(this.lab4Button_Click);
             // 
             // lab5Button
             // 
@@ -277,6 +278,7 @@
             this.labFlowLayoutPanel.Name = "labFlowLayoutPanel";
             this.labFlowLayoutPanel.Size = new System.Drawing.Size(197, 492);
             this.labFlowLayoutPanel.TabIndex = 2;
+            this.labFlowLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.labFlowLayoutPanel_Paint);
             // 
             // labDisplayPanel
             // 
