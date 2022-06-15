@@ -88,13 +88,13 @@ namespace PrzetwarznieObrazow
             Rectangle rectangle = new Rectangle(0, 0, yuv.Width, yuv.Height);
             BitmapData bmpData = yuv.LockBits(rectangle, ImageLockMode.ReadWrite, yuv.PixelFormat);
 
-            Image<Bgr, byte> outputImage = new Image<Bgr, byte>(yuv.Width, yuv.Height, bmpData.Stride, bmpData.Scan0);
+            Image<Bgra, byte> outputImage = new Image<Bgra, byte>(yuv.Width, yuv.Height, bmpData.Stride, bmpData.Scan0);
             Image<Gray, byte> grayImage = outputImage[0]; 
             
             
 
             histogramBox1.ClearHistogram();
-            histogramBox1.GenerateHistograms(grayImage, 50);
+            histogramBox1.GenerateHistograms(grayImage, 255);
             
 
             yuv.UnlockBits(bmpData);
@@ -104,7 +104,7 @@ namespace PrzetwarznieObrazow
 
             Rectangle rectangle2 = new Rectangle(0, 0, hsv.Width, hsv.Height);
             BitmapData bmpData2 = hsv.LockBits(rectangle2, ImageLockMode.ReadWrite, hsv.PixelFormat);
-            Image<Bgr, byte> outputImage2 = new Image<Bgr, byte>(hsv.Width, hsv.Height, bmpData2.Stride, bmpData2.Scan0);
+            Image<Bgra, byte> outputImage2 = new Image<Bgra, byte>(hsv.Width, hsv.Height, bmpData2.Stride, bmpData2.Scan0);
             Image<Gray, byte> grayImage2 = outputImage2[0];
             histogramBox2.ClearHistogram();
             histogramBox2.GenerateHistograms(grayImage2, 50);
@@ -124,6 +124,11 @@ namespace PrzetwarznieObrazow
         }
 
         private void labFlowLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

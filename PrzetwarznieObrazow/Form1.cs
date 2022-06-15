@@ -77,5 +77,11 @@ namespace PrzetwarznieObrazow
             L4Form l4 = new L4Form();
             l4.Show();
         }
+
+        private void lab5Button_Click(object sender, EventArgs e)
+        {
+            L5Form l5 = new L5Form();
+            l5.Show();
+        }
     }
 }

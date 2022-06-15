@@ -262,6 +262,7 @@
             this.lab5Button.TabIndex = 4;
             this.lab5Button.Text = "Lab5";
             this.lab5Button.UseVisualStyleBackColor = true;
+            this.lab5Button.Click += new System.EventHandler(this.lab5Button_Click);
             // 
             // lab6Button
             // 

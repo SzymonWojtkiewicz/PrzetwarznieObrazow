@@ -120,7 +120,7 @@ namespace PrzetwarznieObrazow
             Rectangle rectangle = new Rectangle(0, 0, autoTsBitmap.Width, autoTsBitmap.Height);
             BitmapData bmpData = autoTsBitmap.LockBits(rectangle, ImageLockMode.ReadWrite, autoTsBitmap.PixelFormat);
 
-            Image<Bgr, byte> outputImage = new Image<Bgr, byte>(autoTsBitmap.Width, autoTsBitmap.Height, bmpData.Stride, bmpData.Scan0);
+            Image<Bgra, byte> outputImage = new Image<Bgra, byte>(autoTsBitmap.Width, autoTsBitmap.Height, bmpData.Stride, bmpData.Scan0);
             Image<Gray, byte> grayImage = outputImage[0];
 
             var histogram = new DenseHistogram(256, new RangeF(0.0f, 255.0f));
@@ -129,9 +129,9 @@ namespace PrzetwarznieObrazow
             histogram.CopyTo(values);
 
             int threshold = 0;
-            for (int i = 0; i < values.Length; i++)
+            for (int i = 30; i < values.Length; i++)
             {
-                if (values[i] > threshold)
+                if (values[i] > values[threshold])
                 {
                     threshold = i;
                     
