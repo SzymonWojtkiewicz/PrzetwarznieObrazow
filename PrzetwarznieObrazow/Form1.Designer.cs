@@ -113,6 +113,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // chooseFile1
             // 
@@ -122,6 +123,7 @@
             this.chooseFile1.TabIndex = 1;
             this.chooseFile1.Text = "Choose File";
             this.chooseFile1.UseVisualStyleBackColor = true;
+            this.chooseFile1.Click += new System.EventHandler(this.chooseFile1_Click);
             // 
             // loadButton1
             // 
@@ -131,6 +133,7 @@
             this.loadButton1.TabIndex = 2;
             this.loadButton1.Text = "Load";
             this.loadButton1.UseVisualStyleBackColor = true;
+            this.loadButton1.Click += new System.EventHandler(this.loadButton1_Click);
             // 
             // label2
             // 
@@ -156,6 +159,7 @@
             this.chooseFile2.TabIndex = 4;
             this.chooseFile2.Text = "Choose File";
             this.chooseFile2.UseVisualStyleBackColor = true;
+            this.chooseFile2.Click += new System.EventHandler(this.chooseFile2_Click);
             // 
             // loadButton2
             // 
@@ -165,6 +169,7 @@
             this.loadButton2.TabIndex = 5;
             this.loadButton2.Text = "Load";
             this.loadButton2.UseVisualStyleBackColor = true;
+            this.loadButton2.Click += new System.EventHandler(this.loadButton2_Click);
             // 
             // label3
             // 
@@ -190,6 +195,7 @@
             this.chooseFile3.TabIndex = 7;
             this.chooseFile3.Text = "Choose file path";
             this.chooseFile3.UseVisualStyleBackColor = true;
+            this.chooseFile3.Click += new System.EventHandler(this.chooseFile3_Click);
             // 
             // loadButton3
             // 
@@ -272,6 +278,7 @@
             this.lab6Button.TabIndex = 5;
             this.lab6Button.Text = "Lab6";
             this.lab6Button.UseVisualStyleBackColor = true;
+            this.lab6Button.Click += new System.EventHandler(this.lab6Button_Click);
             // 
             // labFlowLayoutPanel
             // 

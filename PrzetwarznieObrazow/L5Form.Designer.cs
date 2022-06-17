@@ -38,21 +38,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.labDisplayPanel = new System.Windows.Forms.Panel();
+            this.imageBox1 = new Emgu.CV.UI.ImageBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox0 = new System.Windows.Forms.PictureBox();
-            this.imageBox1 = new Emgu.CV.UI.ImageBox();
             this.labFlowLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.labDisplayPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labFlowLayoutPanel
@@ -152,6 +152,15 @@
             this.labDisplayPanel.Size = new System.Drawing.Size(1452, 864);
             this.labDisplayPanel.TabIndex = 6;
             // 
+            // imageBox1
+            // 
+            this.imageBox1.Location = new System.Drawing.Point(39, 574);
+            this.imageBox1.Name = "imageBox1";
+            this.imageBox1.Size = new System.Drawing.Size(75, 23);
+            this.imageBox1.TabIndex = 2;
+            this.imageBox1.TabStop = false;
+            this.imageBox1.Click += new System.EventHandler(this.imageBox1_Click);
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Location = new System.Drawing.Point(726, 429);
@@ -192,15 +201,6 @@
             this.pictureBox0.TabIndex = 0;
             this.pictureBox0.TabStop = false;
             // 
-            // imageBox1
-            // 
-            this.imageBox1.Location = new System.Drawing.Point(39, 574);
-            this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(75, 23);
-            this.imageBox1.TabIndex = 2;
-            this.imageBox1.TabStop = false;
-            this.imageBox1.Click += new System.EventHandler(this.imageBox1_Click);
-            // 
             // L5Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,16 +211,17 @@
             this.Controls.Add(this.labFlowLayoutPanel);
             this.Name = "L5Form";
             this.Text = "L5Form";
+            this.Load += new System.EventHandler(this.L5Form_Load);
             this.labFlowLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.labDisplayPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

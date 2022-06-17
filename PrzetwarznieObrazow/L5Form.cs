@@ -175,5 +175,10 @@ namespace PrzetwarznieObrazow
         {
 
         }
+
+        private void L5Form_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

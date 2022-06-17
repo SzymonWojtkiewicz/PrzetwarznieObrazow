@@ -95,6 +95,12 @@
     <Compile Include="L5Form.Designer.cs">
       <DependentUpon>L5Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="L6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L6Form.Designer.cs">
+      <DependentUpon>L6Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomMaskDesigner.resx">
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="L5Form.resx">
       <DependentUpon>L5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L6Form.resx">
+      <DependentUpon>L6Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
